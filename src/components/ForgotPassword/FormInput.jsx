@@ -28,7 +28,7 @@ const FormInput = () => {
           <Link to={"/forgot-password/confirmation"}>
             <button
               type="submit"
-              className="p-3 w-full bg-red-400 rounded-lg text-xl font-bold text-white"
+              className="p-3 w-full bg-red-500 hover:bg-red-600 rounded-lg text-xl font-bold text-white"
             >
               Reset Password
             </button>

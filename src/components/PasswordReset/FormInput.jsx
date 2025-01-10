@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import { FiEye, FiEyeOff, FiCheck } from "react-icons/fi";
 
 const FormInput = () => {
@@ -94,14 +93,12 @@ const FormInput = () => {
           </div>
         </div>
         <div className="flex flex-col mt-8 w-full text-base">
-          <Link to={"/forgot-password/confirmation"}>
-            <button
-              type="submit"
-              className="p-3 w-full bg-red-400 rounded-lg text-xl font-bold text-white"
-            >
-              Change Password
-            </button>
-          </Link>
+          <button
+            type="submit"
+            className="p-3 w-full bg-red-500 hover:bg-red-600 rounded-lg text-xl font-bold text-white"
+          >
+            Change Password
+          </button>
         </div>
       </form>
     </div>

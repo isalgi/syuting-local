@@ -49,13 +49,13 @@ const FormInput = () => {
         <div className="flex flex-col mt-5 w-full text-base">
           <button
             type="submit"
-            className="p-3 w-full bg-red-400 rounded-lg font-bold text-white"
+            className="p-3 w-full bg-red-500 hover:bg-red-600 rounded-lg font-bold text-white"
           >
             Login
           </button>
           <button
             type="button"
-            className="flex flex-wrap gap-5 justify-center items-center p-3 mt-5 w-full bg-white rounded-lg border border-red-400 text-red-400"
+            className="flex flex-wrap gap-5 justify-center items-center p-3 mt-5 w-full bg-white hover:bg-slate-50 rounded-lg border border-red-400 text-red-400"
           >
             <img
               src="https://cdn.builder.io/api/v1/image/assets/TEMP/ba6591286fa2f5ecf3a710a96793b6f469aaaac47e9a132d82f4361a083726ce?placeholderIfAbsent=true&apiKey=0beeac6283a34947ad4e7ad15eeb25b2"

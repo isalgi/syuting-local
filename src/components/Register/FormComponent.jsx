@@ -12,7 +12,7 @@ export default function FormComponent() {
       </div>
       <form className="w-full">
         <Link to={"/host-register"}>
-          <button className="w-full bg-red-400 text-white font-medium py-3 rounded-lg mb-5 hover:bg-red-500">
+          <button className="w-full bg-red-500 text-white font-medium py-3 rounded-lg mb-5 hover:bg-red-600">
             Register now
           </button>
         </Link>
