@@ -37,12 +37,14 @@ const FormInput = () => {
             />
             <span>Remember me</span>
           </label>
-          <button
-            type="button"
-            className="text-black font-bold border-b-2 border-black"
-          >
-            Forget Password?
-          </button>
+          <Link to={"/forgotPassword"}>
+            <button
+              type="button"
+              className="text-black font-bold border-b-2 border-black"
+            >
+              Forget Password?
+            </button>
+          </Link>
         </div>
         <div className="flex flex-col mt-5 w-full text-base">
           <button
