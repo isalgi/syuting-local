@@ -1,7 +1,7 @@
-import LoginSection from "../components/utils/LoginSection";
-import FormComponent from "../components/ForgotConfirmation/FormComponent";
+import RegisterSection from "../components/utils/RegisterSection";
+import FormInput from "../components/HostRegisterVerifyOtp/FormInput";
 
-export default function ForgotConfirmationPage() {
+export default function HostRegisterVerifyOtpPage() {
   return (
     <div
       className="flex h-screen "
@@ -20,12 +20,12 @@ export default function ForgotConfirmationPage() {
       >
         {/* Left Image Section */}
         <div className="flex items-center">
-          <LoginSection />
+          <RegisterSection />
         </div>
 
         {/* Right Form Section */}
         <div className="flex items-center justify-center">
-          <FormComponent />
+          <FormInput />
         </div>
       </div>
     </div>

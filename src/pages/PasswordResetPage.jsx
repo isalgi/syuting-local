@@ -1,4 +1,4 @@
-import LoginSection from "../components/Utils/LoginSection";
+import LoginSection from "../components/utils/LoginSection";
 import FormInput from "../components/PasswordReset/FormInput";
 
 export default function PasswordResetPage() {
