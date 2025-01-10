@@ -4,12 +4,21 @@ import FormComponent from "../components/Register/FormComponent";
 export default function RegisterPage() {
   return (
     <div
-      className="flex flex-col items-center justify-center  bg-cover bg-center overflow-y-hidden"
+      className="flex h-screen "
       style={{
         backgroundImage: "url('/Bg-RegisterPage.png')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
       }}
     >
-      <div className="grid grid-cols-2 gap-10 w-full max-w-8xl p-4 max-md:grid-cols-1 max-md:p-5">
+      <div
+        className="grid grid-cols-2 gap-10 w-full max-w-8xl max-md:grid-cols-1"
+        // Scale down so user doesn't need to scroll
+        style={{
+          transform: "scale(0.8)",
+          transformOrigin: "center",
+        }}
+      >
         {/* Left Image Section */}
         <div className="flex items-center">
           <RegisterSection />
