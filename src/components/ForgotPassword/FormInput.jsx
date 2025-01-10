@@ -6,7 +6,7 @@ const FormInput = () => {
       <div className="text-4xl font-semibold text-neutral-700 mb-5">
         Forgot Password
       </div>
-      <div className="text-neutral-700 leading-6 mb-8">
+      <div className="text-neutral-400 leading-6 mb-8">
         Please enter your registered email and we will send you a reset
         instructions.
       </div>

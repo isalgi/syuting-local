@@ -6,7 +6,7 @@ export default function FormComponent() {
       <div className="text-4xl font-semibold text-neutral-700 mb-5">
         Forgot Password
       </div>
-      <div className="text-neutral-700 leading-6 mb-4">
+      <div className="text-neutral-400 leading-6 mb-4">
         A reset email have been sent to tyler@gmail.com. Please check your inbox
         and follow the reset instructions.
       </div>
@@ -14,7 +14,7 @@ export default function FormComponent() {
         Didn&apos;t receive the email?
       </div>
       <form className="w-full">
-        <Link to={"/hostRegister"}>
+        <Link to={"/forgot-password/reset"}>
           <button className="w-full bg-[#D9D9D9] text-white text-xl font-medium py-3 rounded-lg mb-2">
             Resend in 30s
           </button>
@@ -27,7 +27,7 @@ export default function FormComponent() {
           </button>
         </Link>
       </div>
-      <div className="text-neutral-700 leading-6 mb-8 mt-4">
+      <div className="text-neutral-400 leading-6 mb-8 mt-4">
         If the email is right and you still didn’t got the email, you can
         contact us at{" "}
         <span className="text-[#E8655B] font-medium">help@syuting.com</span>

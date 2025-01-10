@@ -4,6 +4,7 @@ import HostRegisterPage from "./pages/HostRegisterPage";
 import LoginPage from "./pages/LoginPage";
 import ForgotPasswordPage from "./pages/ForgotPasswordPage";
 import ForgotConfirmationPage from "./pages/ForgotConfirmationPage";
+import PasswordResetPage from "./pages/PasswordResetPage";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           path="/forgot-password/confirmation"
           element={<ForgotConfirmationPage />}
         />
+        <Route path="/forgot-password/reset" element={<PasswordResetPage />} />
       </Routes>
     </Router>
   );

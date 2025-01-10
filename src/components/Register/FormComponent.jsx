@@ -11,7 +11,7 @@ export default function FormComponent() {
         great host and be known by our partner.
       </div>
       <form className="w-full">
-        <Link to={"/hostRegister"}>
+        <Link to={"/host-register"}>
           <button className="w-full bg-red-400 text-white font-medium py-3 rounded-lg mb-5 hover:bg-red-500">
             Register now
           </button>
