@@ -57,7 +57,7 @@ export default function HostRegisterPage() {
 
         {/* Right Form Section */}
         <div className="flex items-center justify-center">
-          <div className="flex flex-col w-full max-w-lg">
+          <div className="flex flex-col w-full max-w-2xl">
             <h1 className="text-4xl font-bold text-black mb-8">
               Register as Host
             </h1>
