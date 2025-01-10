@@ -37,7 +37,7 @@ const FormInput = () => {
             />
             <span>Remember me</span>
           </label>
-          <Link to={"/forgotPassword"}>
+          <Link to={"/forgot-password"}>
             <button
               type="button"
               className="text-black font-bold border-b-2 border-black"

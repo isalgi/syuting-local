@@ -25,12 +25,14 @@ const FormInput = () => {
           </div>
         </div>
         <div className="flex flex-col mt-5 w-full text-base">
-          <button
-            type="submit"
-            className="p-3 w-full bg-red-400 rounded-lg text-xl font-bold text-white"
-          >
-            Reset Password
-          </button>
+          <Link to={"/forgot-password/confirmation"}>
+            <button
+              type="submit"
+              className="p-3 w-full bg-red-400 rounded-lg text-xl font-bold text-white"
+            >
+              Reset Password
+            </button>
+          </Link>
         </div>
         <div className="self-center mt-5 text-sm text-black text-opacity-50">
           <Link to={"/login"}>
