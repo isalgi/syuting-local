@@ -1,4 +1,4 @@
-import ReusableSection from "../components/Utils/ReusableSection";
+import LoginSection from "../components/Utils/LoginSection";
 import FormInput from "../components/Login/FormInput";
 
 export default function LoginPage() {
@@ -9,10 +9,10 @@ export default function LoginPage() {
         backgroundImage: "url('/Bg-RegisterPage.png')",
       }}
     >
-      <div className="grid grid-cols-2 gap-10 w-full max-w-9xl p-10 max-md:grid-cols-1 max-md:p-5">
+      <div className="grid grid-cols-2 gap-10 w-full max-w-9xl p-4 max-md:grid-cols-1 max-md:p-5">
         {/* Left Image Section */}
         <div className="flex items-center">
-          <ReusableSection />
+          <LoginSection />
         </div>
 
         {/* Right Form Section */}

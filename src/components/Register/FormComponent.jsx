@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom";
+
 export default function FormComponent() {
   return (
-    <div className="flex flex-col w-full max-w-lg bg-white px-12 py-24 rounded-3xl shadow-xl">
+    <div className="flex flex-col w-full max-w-xl bg-white px-12 py-24 rounded-3xl shadow-xl">
       <div className="text-4xl font-semibold text-neutral-700 mb-5">
         Host Register
       </div>
@@ -9,9 +11,11 @@ export default function FormComponent() {
         great host and be known by our partner.
       </div>
       <form className="w-full">
-        <button className="w-full bg-red-400 text-white font-medium py-3 rounded-lg mb-5 hover:bg-red-500">
-          Register now
-        </button>
+        <Link to={"/hostRegister"}>
+          <button className="w-full bg-red-400 text-white font-medium py-3 rounded-lg mb-5 hover:bg-red-500">
+            Register now
+          </button>
+        </Link>
       </form>
       <button className="flex items-center justify-center w-full border border-gray-300 py-3 rounded-lg hover:bg-gray-100">
         <img
@@ -23,9 +27,9 @@ export default function FormComponent() {
       </button>
       <div className="text-sm text-center mt-5">
         Already have an account?{" "}
-        <a href="#" className="text-red-400 font-bold">
+        <Link to={"/login"} href="#" className="text-red-400 font-bold">
           Login
-        </a>
+        </Link>
       </div>
     </div>
   );

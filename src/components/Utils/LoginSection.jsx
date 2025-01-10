@@ -1,18 +1,18 @@
-export default function ReusableSection() {
+export default function LoginSection() {
   return (
     <div className="flex flex-col items-center justify-center w-full h-full">
-      <div className="relative w-full min-h-[726px] rounded-3xl overflow-hidden">
+      <div className="relative w-full min-h-[626px] rounded-3xl overflow-hidden">
         {/* Background Image */}
         <img
           loading="lazy"
-          src="/registerImg.png"
+          src="/Img-Login.png"
           alt="Background"
           className="absolute inset-0 w-full h-full object-cover"
         />
-        <div className="flex relative flex-col w-full min-h-[726px] max-md:max-w-full">
+        <div className="flex relative flex-col w-full min-h-[626px] max-md:max-w-full">
           <img
             loading="lazy"
-            src="/registerImg.png"
+            src="/Img-Login.png"
             alt="Overlay Background"
             className="object-cover absolute inset-0 w-full h-full"
           />

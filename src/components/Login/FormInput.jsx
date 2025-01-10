@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const FormInput = () => {
   return (
     <div className="w-full max-w-[620px] bg-white px-12 py-16 rounded-3xl shadow-xl">
@@ -63,9 +65,11 @@ const FormInput = () => {
         </div>
         <div className="self-center mt-5 text-sm text-black text-opacity-50">
           <span>Dont have an account? </span>
-          <button className="font-bold text-[#E8655B] border-b-[#E8655B] border-b-2">
-            Register Now
-          </button>
+          <Link to={"/"}>
+            <button className="font-bold text-[#E8655B] border-b-[#E8655B] border-b-2">
+              Register Now
+            </button>
+          </Link>
         </div>
       </form>
     </div>
