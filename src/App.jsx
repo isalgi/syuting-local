@@ -7,7 +7,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<RegisterPage />} />
-        <Route path="/HostRegister" element={<HostRegisterPage />} />
+        <Route path="/hostRegister" element={<HostRegisterPage />} />
       </Routes>
     </Router>
   );
