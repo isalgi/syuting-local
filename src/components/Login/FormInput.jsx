@@ -90,7 +90,7 @@ const FormInput = () => {
         </div>
         <div className="self-center mt-5 text-sm text-black text-opacity-50 text-center md:text-left">
           <span>Don&apos;t have an account? </span>
-          <Link to={"/"}>
+          <Link to={"/register"}>
             <button className="font-bold text-[#E8655B] border-b-[#E8655B] border-b-2">
               Register Now
             </button>

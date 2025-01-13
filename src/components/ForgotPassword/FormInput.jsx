@@ -35,7 +35,7 @@ const FormInput = () => {
           </Link>
         </div>
         <div className="self-center mt-5 text-sm text-black text-opacity-50 text-center md:text-left">
-          <Link to={"/login"}>
+          <Link to={"/"}>
             <button className="text-base md:text-lg font-bold text-[#E8655B] border-b-[#E8655B] border-b-2">
               Back to login page
             </button>

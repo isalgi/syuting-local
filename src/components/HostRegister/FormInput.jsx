@@ -124,7 +124,7 @@ const HostRegisterForm = () => {
             className="rounded-lg"
           ></iframe>
         </div>
-        <Link to={"/host-register/verify"}>
+        <Link to={"/register/host/verify"}>
           <button
             type="submit"
             className="w-full bg-red-500 text-white py-3 rounded-lg hover:bg-red-500 focus:outline-none focus:ring-2 focus:ring-red-600 mt-6"
