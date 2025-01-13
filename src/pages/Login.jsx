@@ -1,7 +1,7 @@
 import LoginSection from "../components/utils/LoginSection";
 import FormInput from "../components/Login/FormInput";
 
-export default function LoginPage() {
+export default function Login() {
   return (
     <div
       className="flex h-screen"
