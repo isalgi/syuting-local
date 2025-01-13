@@ -1,36 +1,42 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import LoginPage from "./pages/LoginPage";
-import SelectRegisterPage from "./pages/SelectRegisterPage";
-import RegisterPage from "./pages/RegisterPage";
-import HostRegisterPage from "./pages/HostRegisterPage";
-import HostRegisterVerifyPage from "./pages/HostRegisterVerifyPage";
-import HostRegisterVerifyOtpPage from "./pages/HostRegisterVerifyOtpPage";
-import ForgotPasswordPage from "./pages/ForgotPasswordPage";
-import ForgotConfirmationPage from "./pages/ForgotConfirmationPage";
-import PasswordResetPage from "./pages/PasswordResetPage";
+
+import Login from "./pages/Login";
+import SelectRegister from "./pages/SelectRegister";
+
+import Register1 from "./pages/auth/host/Register";
+import HostRegister from "./pages/auth/host/HostRegister";
+import HostRegisterVerify from "./pages/auth/host/HostRegisterVerify";
+import HostRegisterVerifyOtp from "./pages/auth/host/HostRegisterVerifyOtp";
+
+import Register2 from "./pages/auth/talent/Register";
+
+import ForgotPassword from "./pages/auth/reset/ForgotPassword";
+import ForgotConfirmation from "./pages/auth/reset/ForgotPasswordConfirmation";
+import ResetPassword from "./pages/auth/reset/ResetPassword";
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<LoginPage />} />
-        <Route path="/register" element={<SelectRegisterPage />} />
-        <Route path="/register/host" element={<RegisterPage />} />
-        <Route path="/register/host/form" element={<HostRegisterPage />} />
-        <Route
-          path="/register/host/verify"
-          element={<HostRegisterVerifyPage />}
-        />
+        <Route path="/" element={<Login />} />
+        <Route path="/register" element={<SelectRegister />} />
+
+        <Route path="/register/host" element={<Register1 />} />
+        <Route path="/register/host/form" element={<HostRegister />} />
+        <Route path="/register/host/verify" element={<HostRegisterVerify />} />
         <Route
           path="/register/host/verify/otp"
-          element={<HostRegisterVerifyOtpPage />}
+          element={<HostRegisterVerifyOtp />}
         />
-        <Route path="/forgot-password" element={<ForgotPasswordPage />} />
+
+        <Route path="/register/talent" element={<Register2 />} />
+
+        <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route
           path="/forgot-password/confirmation"
-          element={<ForgotConfirmationPage />}
+          element={<ForgotConfirmation />}
         />
-        <Route path="/forgot-password/reset" element={<PasswordResetPage />} />
+        <Route path="/forgot-password/reset" element={<ResetPassword />} />
       </Routes>
     </Router>
   );

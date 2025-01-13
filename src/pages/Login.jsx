@@ -4,7 +4,7 @@ import FormInput from "../components/Login/FormInput";
 export default function LoginPage() {
   return (
     <div
-      className="flex h-screen "
+      className="flex h-screen"
       style={{
         backgroundImage: "url('/Bg-RegisterPage.png')",
         backgroundSize: "cover",

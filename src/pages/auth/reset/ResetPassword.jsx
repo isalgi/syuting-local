@@ -1,10 +1,10 @@
-import LoginSection from "../components/utils/LoginSection";
-import FormComponent from "../components/ForgotConfirmation/FormComponent";
+import LoginSection from "../../../components/utils/LoginSection";
+import FormInput from "../../../components/ResetPassword/FormInput";
 
-export default function ForgotConfirmationPage() {
+export default function ResetPassword() {
   return (
     <div
-      className="flex h-screen "
+      className="flex h-screen"
       style={{
         backgroundImage: "url('/Bg-RegisterPage.png')",
         backgroundSize: "cover",
@@ -25,7 +25,7 @@ export default function ForgotConfirmationPage() {
 
         {/* Right Form Section */}
         <div className="flex items-center justify-center">
-          <FormComponent />
+          <FormInput />
         </div>
       </div>
     </div>

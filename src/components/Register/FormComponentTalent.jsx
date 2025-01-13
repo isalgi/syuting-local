@@ -1,17 +1,17 @@
 import { Link } from "react-router-dom";
 
-export default function FormComponent() {
+export default function FormComponentTalent() {
   return (
     <div className="flex flex-col w-full max-w-xl bg-white px-12 py-24 rounded-3xl shadow-xl">
       <div className="text-4xl font-semibold text-neutral-700 mb-5">
-        Host Registration
+        Talent Registration
       </div>
       <div className="text-neutral-700 leading-6 mb-8">
-        Start your journey as owner of any location and rent it here. Become a
-        great host and be known by our partner.
+        Start your journey as a talent and get discovered by leading production
+        houses looking for skilled individuals.
       </div>
       <form className="w-full">
-        <Link to={"/register/host/form"}>
+        <Link to={"/register/talent/form"}>
           <button className="w-full bg-red-500 text-white font-medium py-3 rounded-lg mb-5 hover:bg-red-600">
             Register now
           </button>

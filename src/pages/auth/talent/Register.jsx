@@ -1,10 +1,10 @@
-import RegisterSection from "../components/utils/RegisterSection";
-import FormComponent from "../components/Register/FormComponent";
+import LoginSection from "../../../components/utils/LoginSection";
+import FormComponentTalent from "../../../components/Register/FormComponentTalent";
 
-export default function RegisterPage() {
+export default function Register() {
   return (
     <div
-      className="flex h-screen "
+      className="flex h-screen"
       style={{
         backgroundImage: "url('/Bg-RegisterPage.png')",
         backgroundSize: "cover",
@@ -21,12 +21,12 @@ export default function RegisterPage() {
       >
         {/* Left Image Section */}
         <div className="flex items-center">
-          <RegisterSection />
+          <LoginSection />
         </div>
 
         {/* Right Form Section */}
         <div className="flex items-center justify-center">
-          <FormComponent />
+          <FormComponentTalent />
         </div>
       </div>
     </div>

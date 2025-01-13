@@ -1,10 +1,10 @@
-import RegisterSection from "../components/utils/RegisterSection";
-import FormInput from "../components/HostRegisterVerifyOtp/FormInput";
+import RegisterSection from "../../../components/utils/RegisterSection";
+import FormComponent from "../../../components/HostRegisterVerify/FormComponent";
 
-export default function HostRegisterVerifyOtpPage() {
+export default function HostRegisterVerify() {
   return (
     <div
-      className="flex h-screen "
+      className="flex h-screen"
       style={{
         backgroundImage: "url('/Bg-RegisterPage.png')",
         backgroundSize: "cover",
@@ -12,7 +12,8 @@ export default function HostRegisterVerifyOtpPage() {
       }}
     >
       <div
-        className="grid grid-cols-2 gap-10 w-full max-w-8xl max-md:grid-cols-1 max-md:p-5"
+        className="grid grid-cols-2 gap-10 w-full max-w-8xl max-md:grid-cols-1"
+        // Scale down so user doesn't need to scroll
         style={{
           transform: "scale(0.8)",
           transformOrigin: "center",
@@ -25,7 +26,7 @@ export default function HostRegisterVerifyOtpPage() {
 
         {/* Right Form Section */}
         <div className="flex items-center justify-center">
-          <FormInput />
+          <FormComponent />
         </div>
       </div>
     </div>

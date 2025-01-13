@@ -1,10 +1,10 @@
-import LoginSection from "../components/utils/LoginSection";
-import FormInput from "../components/ForgotPassword/FormInput";
+import LoginSection from "../../../components/utils/LoginSection";
+import FormInput from "../../../components/ForgotPassword/FormInput";
 
-export default function ForgotPasswordPage() {
+export default function ForgotPassword() {
   return (
     <div
-      className="flex h-screen "
+      className="flex h-screen"
       style={{
         backgroundImage: "url('/Bg-RegisterPage.png')",
         backgroundSize: "cover",
