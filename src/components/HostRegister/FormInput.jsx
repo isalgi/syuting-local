@@ -56,7 +56,7 @@ const HostRegisterForm = () => {
   };
 
   return (
-    <div className="w-full max-w-3xl px-12 py-16">
+    <div className="w-full max-w-3xl px-12 py-4">
       <form className="flex flex-col gap-6 bg-white rounded-3xl shadow-xl p-8">
         {formFields.map((field) => {
           if (field.type === "password") {
