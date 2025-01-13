@@ -24,7 +24,7 @@ export default function LoginPage() {
         </div>
 
         {/* Right Form Section */}
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center pb-12">
           <FormInput />
         </div>
       </div>
