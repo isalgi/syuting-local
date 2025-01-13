@@ -1,4 +1,6 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import { FiEye, FiEyeOff } from "react-icons/fi";
 
 const formFields = [
   { label: "Name", placeholder: "Enter your name", id: "name", type: "text" },
@@ -41,23 +43,73 @@ const formFields = [
 ];
 
 const HostRegisterForm = () => {
+  const [isPasswordVisible, setIsPasswordVisible] = useState(false);
+  const [isConfirmPasswordVisible, setIsConfirmPasswordVisible] =
+    useState(false);
+
+  const togglePasswordVisibility = () => {
+    setIsPasswordVisible(!isPasswordVisible);
+  };
+
+  const toggleConfirmPasswordVisibility = () => {
+    setIsConfirmPasswordVisible(!isConfirmPasswordVisible);
+  };
+
   return (
-    <div className="w-full max-w-3xl px-12 py-16 ">
+    <div className="w-full max-w-3xl px-12 py-16">
       <h1 className="text-4xl font-bold text-black mb-8">Register as Host</h1>
       <form className="flex flex-col gap-6 bg-white rounded-3xl shadow-xl p-8">
-        {formFields.map((field) => (
-          <div key={field.id} className="flex flex-col">
-            <label htmlFor={field.id} className="font-medium text-black mb-2">
-              {field.label}
-            </label>
-            <input
-              id={field.id}
-              type={field.type}
-              placeholder={field.placeholder}
-              className="w-full px-3 py-2 mt-1 bg-white rounded-md border border-gray-300"
-            />
-          </div>
-        ))}
+        {formFields.map((field) => {
+          if (field.type === "password") {
+            const isPassword = field.id === "password";
+            const isVisible = isPassword
+              ? isPasswordVisible
+              : isConfirmPasswordVisible;
+            const toggleVisibility = isPassword
+              ? togglePasswordVisibility
+              : toggleConfirmPasswordVisibility;
+
+            return (
+              <div key={field.id} className="flex flex-col">
+                <label
+                  htmlFor={field.id}
+                  className="font-medium text-black mb-2"
+                >
+                  {field.label}
+                </label>
+                <div className="relative">
+                  <input
+                    id={field.id}
+                    type={isVisible ? "text" : "password"}
+                    placeholder={field.placeholder}
+                    className="w-full px-3 py-2 mt-1 bg-white rounded-md border border-gray-300"
+                  />
+                  <button
+                    type="button"
+                    onClick={toggleVisibility}
+                    className="absolute top-1/2 right-3 transform -translate-y-1/2 text-gray-500"
+                  >
+                    {isVisible ? <FiEyeOff size={20} /> : <FiEye size={20} />}
+                  </button>
+                </div>
+              </div>
+            );
+          }
+
+          return (
+            <div key={field.id} className="flex flex-col">
+              <label htmlFor={field.id} className="font-medium text-black mb-2">
+                {field.label}
+              </label>
+              <input
+                id={field.id}
+                type={field.type}
+                placeholder={field.placeholder}
+                className="w-full px-3 py-2 mt-1 bg-white rounded-md border border-gray-300"
+              />
+            </div>
+          );
+        })}
         <div className="flex flex-col mt-5">
           <label className="font-medium text-black mb-2">
             Pick your Location
