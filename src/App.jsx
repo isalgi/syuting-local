@@ -10,6 +10,8 @@ import HostRegisterVerifyOtp from "./pages/auth/host/HostRegisterVerifyOtp";
 
 import Register2 from "./pages/auth/talent/Register";
 import TalentRegister from "./pages/auth/talent/TalentRegister";
+import TalentRegisterVerify from "./pages/auth/talent/TalentRegisterVerify";
+import TalentRegisterVerifyOtp from "./pages/auth/talent/TalentRegisterVerifyOtp";
 
 import ForgotPassword from "./pages/auth/reset/ForgotPassword";
 import ForgotConfirmation from "./pages/auth/reset/ForgotPasswordConfirmation";
@@ -32,6 +34,14 @@ function App() {
 
         <Route path="/register/talent" element={<Register2 />} />
         <Route path="/register/talent/form" element={<TalentRegister />} />
+        <Route
+          path="/register/talent/verify"
+          element={<TalentRegisterVerify />}
+        />
+        <Route
+          path="/register/talent/verify/otp"
+          element={<TalentRegisterVerifyOtp />}
+        />
 
         <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route
