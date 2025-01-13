@@ -1,7 +1,7 @@
 import TalentRegisterSection from "../../../components/utils/TalentRegisterSection";
-import FormComponentTalent from "../../../components/Register/FormComponentTalent";
+import TalentRegisterForm from "../../../components/TalentRegister/FormInput";
 
-export default function Register() {
+export default function TalentRegister() {
   return (
     <div
       className="flex h-screen"
@@ -12,11 +12,10 @@ export default function Register() {
       }}
     >
       <div
-        className="grid grid-cols-2 gap-10 w-full max-w-8xl max-md:grid-cols-1"
-        // Scale down so user doesn't need to scroll
+        className="grid grid-cols-2 gap-10 w-full max-w-8xl max-md:grid-cols-1 mt-16"
         style={{
           transform: "scale(0.8)",
-          transformOrigin: "center",
+          transformOrigin: "top",
         }}
       >
         {/* Left Image Section */}
@@ -25,8 +24,8 @@ export default function Register() {
         </div>
 
         {/* Right Form Section */}
-        <div className="flex items-center justify-center">
-          <FormComponentTalent />
+        <div className="flex flex-col">
+          <TalentRegisterForm />
         </div>
       </div>
     </div>

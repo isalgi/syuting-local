@@ -1,4 +1,4 @@
-import RegisterSection from "../../../components/utils/RegisterSection";
+import HostRegisterSection from "../../../components/utils/HostRegisterSection";
 import HostRegisterForm from "../../../components/HostRegister/FormInput";
 
 export default function HostRegister() {
@@ -12,7 +12,7 @@ export default function HostRegister() {
       }}
     >
       <div
-        className="grid grid-cols-2 gap-10 w-full max-w-8xl max-md:grid-cols-1 mt-20"
+        className="grid grid-cols-2 gap-10 w-full max-w-8xl max-md:grid-cols-1 mt-24"
         style={{
           transform: "scale(0.8)",
           transformOrigin: "top",
@@ -20,13 +20,13 @@ export default function HostRegister() {
       >
         {/* Left Image Section */}
         <div className="flex items-center">
-          <RegisterSection />
+          <HostRegisterSection />
         </div>
 
         {/* Right Form Section */}
         <div className="flex flex-col">
-          <h1 className="text-4xl font-bold text-black my-8 ml-12">
-            Register as Host
+          <h1 className="text-4xl font-bold text-black mt-4 mb-4 ml-12">
+            Host Registration
           </h1>
           <div
             className="items-center justify-center max-h-[42rem] overflow-y-auto w-full"

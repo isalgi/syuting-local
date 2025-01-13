@@ -1,4 +1,4 @@
-import RegisterSection from "../../../components/utils/RegisterSection";
+import HostRegisterSection from "../../../components/utils/HostRegisterSection";
 import FormComponentHost from "../../../components/Register/FormComponentHost";
 
 export default function Register() {
@@ -21,7 +21,7 @@ export default function Register() {
       >
         {/* Left Image Section */}
         <div className="flex items-center">
-          <RegisterSection />
+          <HostRegisterSection />
         </div>
 
         {/* Right Form Section */}

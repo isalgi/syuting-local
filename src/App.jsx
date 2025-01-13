@@ -9,6 +9,7 @@ import HostRegisterVerify from "./pages/auth/host/HostRegisterVerify";
 import HostRegisterVerifyOtp from "./pages/auth/host/HostRegisterVerifyOtp";
 
 import Register2 from "./pages/auth/talent/Register";
+import TalentRegister from "./pages/auth/talent/TalentRegister";
 
 import ForgotPassword from "./pages/auth/reset/ForgotPassword";
 import ForgotConfirmation from "./pages/auth/reset/ForgotPasswordConfirmation";
@@ -30,6 +31,7 @@ function App() {
         />
 
         <Route path="/register/talent" element={<Register2 />} />
+        <Route path="/register/talent/form" element={<TalentRegister />} />
 
         <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route

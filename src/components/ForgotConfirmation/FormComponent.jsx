@@ -7,8 +7,9 @@ export default function FormComponent() {
         Forgot Password
       </div>
       <div className="text-neutral-400 leading-6 mb-4">
-        A reset email have been sent to tyler@gmail.com. Please check your inbox
-        and follow the reset instructions.
+        A reset email have been sent to{" "}
+        <span className="text-[#E8655B]">tyler@gmail.com</span>. Please check
+        your inbox and follow the reset instructions.
       </div>
       <div className="text-neutral-700 leading-6 mb-4 font-bold">
         Didn&apos;t receive the email?

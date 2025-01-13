@@ -1,4 +1,4 @@
-import RegisterSection from "../../../components/utils/RegisterSection";
+import HostRegisterSection from "../../../components/utils/HostRegisterSection";
 import FormInput from "../../../components/HostRegisterVerifyOtp/FormInput";
 
 export default function HostRegisterVerifyOtp() {
@@ -20,7 +20,7 @@ export default function HostRegisterVerifyOtp() {
       >
         {/* Left Image Section */}
         <div className="flex items-center">
-          <RegisterSection />
+          <HostRegisterSection />
         </div>
 
         {/* Right Form Section */}
