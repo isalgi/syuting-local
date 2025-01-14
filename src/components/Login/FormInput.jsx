@@ -78,7 +78,7 @@ const FormInput = () => {
           </button>
           <button
             type="button"
-            className="flex flex-wrap gap-5 justify-center items-center p-3 mt-5 w-full bg-white hover:bg-slate-100 rounded-lg border border-red-400 text-red-400"
+            className="text-gray-400 font-bold flex flex-wrap gap-5 justify-center items-center p-3 mt-5 w-full bg-white hover:bg-slate-100 rounded-lg border border-gray-600 "
           >
             <img
               src="https://cdn.builder.io/api/v1/image/assets/TEMP/ba6591286fa2f5ecf3a710a96793b6f469aaaac47e9a132d82f4361a083726ce?placeholderIfAbsent=true&apiKey=0beeac6283a34947ad4e7ad15eeb25b2"
@@ -88,7 +88,7 @@ const FormInput = () => {
             Continue with Google account
           </button>
         </div>
-        <div className="self-center mt-5 text-sm text-black text-opacity-50 text-center md:text-left">
+        <div className="self-center mt-5 text-md text-black text-opacity-50 text-center md:text-left">
           <span>Don&apos;t have an account? </span>
           <Link to={"/register"}>
             <button className="font-bold text-[#E8655B] border-b-[#E8655B] border-b-2">

@@ -12,12 +12,12 @@ export default function FormComponentHost() {
       </div>
       <form className="w-full">
         <Link to={"/register/host/form"}>
-          <button className="w-full bg-red-500 text-white font-medium py-3 rounded-lg mb-5 hover:bg-red-600">
+          <button className="w-full bg-red-500 text-white font-bold py-3 rounded-lg mb-5 hover:bg-red-600">
             Register now
           </button>
         </Link>
       </form>
-      <button className="flex items-center justify-center w-full border border-gray-300 py-3 rounded-lg hover:bg-gray-100">
+      <button className="font-bold text-gray-400 flex items-center justify-center w-full border border-gray-300 py-3 rounded-lg hover:bg-gray-100">
         <img
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/f549195a9524d02e2c756b44bd87aacca0c4b5d3e509c28d2c52fe76acccb6fd?placeholderIfAbsent=true&apiKey=0beeac6283a34947ad4e7ad15eeb25b2"
           alt="Google logo"
@@ -25,9 +25,13 @@ export default function FormComponentHost() {
         />
         Signup with Google Account
       </button>
-      <div className="text-sm text-center mt-5">
+      <div className="text-md text-center mt-5 text-gray-500">
         Already have an account?{" "}
-        <Link to={"/"} href="#" className="text-red-400 font-bold">
+        <Link
+          to={"/"}
+          href="#"
+          className=" text-red-500 font-bold border-b-2 border-red-400"
+        >
           Login
         </Link>
       </div>

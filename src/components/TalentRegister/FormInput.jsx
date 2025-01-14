@@ -30,7 +30,7 @@ const formFields = [
   },
   {
     label: "Confirm Password",
-    placeholder: "Re-enter your password",
+    placeholder: "Confirm your password",
     id: "confirmPassword",
     type: "password",
   },
@@ -51,10 +51,10 @@ const TalentRegisterForm = () => {
 
   return (
     <div className="w-full max-w-3xl px-12 py-4">
+      <h1 className="text-4xl font-bold text-black my-4 ">
+        Talent Registration
+      </h1>
       <form className="flex flex-col gap-4 bg-white rounded-3xl shadow-xl p-8">
-        <h1 className="text-4xl font-bold text-black my-4 ">
-          Talent Registration
-        </h1>
         {formFields.map((field) => {
           if (field.type === "password") {
             const isPassword = field.id === "password";
@@ -67,10 +67,7 @@ const TalentRegisterForm = () => {
 
             return (
               <div key={field.id} className="flex flex-col">
-                <label
-                  htmlFor={field.id}
-                  className="font-medium text-black mb-2"
-                >
+                <label htmlFor={field.id} className="font-bold text-black mb-2">
                   {field.label}
                 </label>
                 <div className="relative">
@@ -115,13 +112,17 @@ const TalentRegisterForm = () => {
             Register Now
           </button>
         </Link>
-        <div className="text-sm text-center">
-          Already have an account?{" "}
-          <Link to={"/"} href="#" className="text-red-400 font-bold">
-            Login
-          </Link>
-        </div>
       </form>
+      <div className="text-md text-center mt-5 text-gray-500">
+        Already have an account?{" "}
+        <Link
+          to={"/"}
+          href="#"
+          className=" text-red-500 font-bold border-b-2 border-red-400"
+        >
+          Login
+        </Link>
+      </div>
     </div>
   );
 };

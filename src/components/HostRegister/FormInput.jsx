@@ -70,10 +70,7 @@ const HostRegisterForm = () => {
 
             return (
               <div key={field.id} className="flex flex-col">
-                <label
-                  htmlFor={field.id}
-                  className="font-medium text-black mb-2"
-                >
+                <label htmlFor={field.id} className="font-bold text-black mb-2">
                   {field.label}
                 </label>
                 <div className="relative">
@@ -133,6 +130,16 @@ const HostRegisterForm = () => {
           </button>
         </Link>
       </form>
+      <div className="text-md text-center mt-5 text-gray-500">
+        Already have an account?{" "}
+        <Link
+          to={"/"}
+          href="#"
+          className=" text-red-500 font-bold border-b-2 border-red-400"
+        >
+          Login
+        </Link>
+      </div>
     </div>
   );
 };

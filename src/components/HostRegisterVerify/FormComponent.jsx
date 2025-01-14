@@ -7,7 +7,8 @@ export default function FormComponent() {
         Account Created
       </div>
       <div className="text-neutral-400 leading-6 mb-4">
-        A verification email have been sent to tyler@gmail.com. You will be
+        A verification email have been sent to{" "}
+        <span className="text-[#E8655B]">tyler@gmail.com</span>. You will be
         redirected into login page after you confirm your account through email.
       </div>
       <div className="text-neutral-700 leading-6 mb-4 font-bold">
