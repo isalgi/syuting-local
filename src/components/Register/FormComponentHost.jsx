@@ -17,7 +17,7 @@ export default function FormComponentHost() {
           </button>
         </Link>
       </form>
-      <button className="font-bold text-gray-400 flex items-center justify-center w-full border border-gray-300 py-3 rounded-lg hover:bg-gray-100">
+      <button className="font-bold text-gray-400 flex items-center justify-center w-full border border-gray-400 py-3 rounded-lg hover:bg-gray-100">
         <img
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/f549195a9524d02e2c756b44bd87aacca0c4b5d3e509c28d2c52fe76acccb6fd?placeholderIfAbsent=true&apiKey=0beeac6283a34947ad4e7ad15eeb25b2"
           alt="Google logo"
