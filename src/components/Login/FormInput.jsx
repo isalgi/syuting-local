@@ -1,12 +1,47 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FiEye, FiEyeOff } from "react-icons/fi";
+import axios from "axios";
 
 const FormInput = () => {
   const [isPasswordVisible, setIsPasswordVisible] = useState(false);
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [errorMessage, setErrorMessage] = useState(null);
+  const navigate = useNavigate();
 
   const togglePasswordVisibility = () => {
     setIsPasswordVisible(!isPasswordVisible);
+  };
+
+  const handleLogin = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await axios.post(
+        "https://travel-journal-api-bootcamp.do.dibimbing.id/api/v1/login",
+        {
+          email,
+          password,
+        },
+        {
+          headers: {
+            apiKey: "24405e01-fbc1-45a5-9f5a-be13afcd757c",
+          },
+        }
+      );
+
+      // Example: Handle successful login
+      console.log("Login successful:", response.data);
+      // Redirect or handle token (e.g., save to localStorage)
+      localStorage.setItem("token", response.data.token);
+      navigate("/dashboard"); // Replace with your dashboard route
+    } catch (error) {
+      console.error("Login failed:", error.response.data);
+      setErrorMessage(
+        error.response.data.message || "Login failed. Try again."
+      );
+    }
   };
 
   return (
@@ -14,7 +49,13 @@ const FormInput = () => {
       <div className="text-3xl md:text-4xl font-semibold text-neutral-700 mb-5 text-center md:text-left">
         Login
       </div>
-      <form className="flex flex-col justify-center self-stretch pb-10 mx-auto w-full max-w-[520px]">
+      {errorMessage && (
+        <div className="mb-4 text-red-500 text-center">{errorMessage}</div>
+      )}
+      <form
+        className="flex flex-col justify-center self-stretch pb-10 mx-auto w-full max-w-[520px]"
+        onSubmit={handleLogin}
+      >
         <div className="flex flex-col gap-5">
           <div>
             <label className="font-medium text-black" htmlFor="emailInput">
@@ -25,6 +66,9 @@ const FormInput = () => {
               type="email"
               placeholder="Enter your email"
               className="w-full px-3 py-2 mt-1 bg-white rounded-md border border-gray-300 focus:border-red-500 focus:ring-1 focus:ring-red-500"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
             />
           </div>
           <div>
@@ -37,6 +81,9 @@ const FormInput = () => {
                 type={isPasswordVisible ? "text" : "password"}
                 placeholder="Enter your password"
                 className="w-full px-3 py-2 mt-1 bg-white rounded-md border border-gray-300 focus:border-red-500 focus:ring-1 focus:ring-red-500"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                required
               />
               <button
                 type="button"

@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./pages/Login";
 import SelectRegister from "./pages/SelectRegister";
 
+import Dashboard from "./pages/Dashboard";
+
 import Register1 from "./pages/auth/host/Register";
 import HostRegister from "./pages/auth/host/HostRegister";
 import HostRegisterVerify from "./pages/auth/host/HostRegisterVerify";
@@ -21,9 +23,10 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="*" element={<Login />} />
         <Route path="/" element={<Login />} />
         <Route path="/register" element={<SelectRegister />} />
+
+        <Route path="/dashboard" element={<Dashboard />} />
 
         <Route path="/register/host" element={<Register1 />} />
         <Route path="/register/host/form" element={<HostRegister />} />

@@ -1,7 +1,18 @@
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import LoginSection from "../components/AuthSection/LoginSection";
 import FormInput from "../components/Login/FormInput";
 
 export default function Login() {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    if (token) {
+      navigate("/dashboard", { replace: true });
+    }
+  }, [navigate]);
+
   return (
     <div
       className="flex h-screen"
