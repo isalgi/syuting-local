@@ -1,4 +1,4 @@
-import LoginSection from "../components/utils/LoginSection";
+import LoginSection from "../components/AuthSection/LoginSection";
 import FormInput from "../components/Login/FormInput";
 
 export default function Login() {

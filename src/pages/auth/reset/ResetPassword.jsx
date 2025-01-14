@@ -1,4 +1,4 @@
-import LoginSection from "../../../components/utils/LoginSection";
+import LoginSection from "../../../components/AuthSection/LoginSection";
 import FormInput from "../../../components/ResetPassword/FormInput";
 
 export default function ResetPassword() {

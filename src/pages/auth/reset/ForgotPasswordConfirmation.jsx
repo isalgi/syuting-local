@@ -1,4 +1,4 @@
-import LoginSection from "../../../components/utils/LoginSection";
+import LoginSection from "../../../components/AuthSection/LoginSection";
 import FormComponent from "../../../components/ForgotConfirmation/FormComponent";
 
 export default function ForgotPasswordConfirmation() {

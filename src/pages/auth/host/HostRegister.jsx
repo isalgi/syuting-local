@@ -1,4 +1,4 @@
-import HostRegisterSection from "../../../components/utils/HostRegisterSection";
+import HostRegisterSection from "../../../components/AuthSection/HostRegisterSection";
 import HostRegisterForm from "../../../components/HostRegister/FormInput";
 
 export default function HostRegister() {

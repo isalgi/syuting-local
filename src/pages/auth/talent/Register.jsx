@@ -1,4 +1,4 @@
-import TalentRegisterSection from "../../../components/utils/TalentRegisterSection";
+import TalentRegisterSection from "../../../components/AuthSection/TalentRegisterSection";
 import FormComponentTalent from "../../../components/Register/FormComponentTalent";
 
 export default function Register() {

@@ -1,4 +1,4 @@
-import HostRegisterSection from "../../../components/utils/HostRegisterSection";
+import HostRegisterSection from "../../../components/AuthSection/HostRegisterSection";
 import FormInput from "../../../components/HostRegisterVerifyOtp/FormInput";
 
 export default function HostRegisterVerifyOtp() {
